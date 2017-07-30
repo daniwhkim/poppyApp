@@ -1,0 +1,144 @@
+@import "grid";
+@import "reset";
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+$light-blue: #E4F1fD;
+$blue: #3FA9F5;
+$white: #FFFFFF;
+$font-size-lg: 36px;
+$font-size-md: 22px;
+$font-size-sm: 15px;
+$font-size-xs: 13px;
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: $light-blue;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.splash {
+  height: 100vh;
+  .col-lg-12 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    font-weight: 700;
+    color: $blue;
+    font-size: $font-size-lg;
+  }
+  h2 {
+    font-size: $font-size-md;
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+.header {
+  background-color: $white;
+  h1 {
+    font-size: $font-size-md;
+    line-height: 50px;
+    color: $blue;
+    font-weight: 700;
+  }
+  i {
+    line-height: 50px;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+form {
+  font-size: $font-size-sm;
+  line-height: 30px;
+  label {
+    float: left;
+    margin: 10px;
+    font-weight: 700;
+  }
+  input {
+    float: right;
+    border: 1px solid #efefef;
+	  border-radius: 0px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+  }
+}
+
+.single {
+  line-height: 30px;
+  h1 {
+    float: left;
+    font-size: $font-size-sm;
+    padding: 0px;
+    margin: 10px;
+    font-weight: 700;
+  }
+  h2 {
+    float: right;
+    margin: 10px;
+    font-size: $font-size-sm;
+  }
+}
+
+.history {
+  .row {
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  i {
+    float: right;
+  }
+  .col-xs-9 {
+    text-align: left;
+    h1 {
+      font-size: $font-size-sm;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+.footer {
+  background-color: $blue;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  .col-lg-6:first-child {
+    width: 50%;
+    float: left;
+  }
+  .col-lg-6:last-child {
+    width: 50%;
+    background-color: $white;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    bottom: 0px;
+  }
+}
+
+img {
+  margin-bottom: 60px;
+}
